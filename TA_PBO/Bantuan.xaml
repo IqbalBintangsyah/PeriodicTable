@@ -1,0 +1,13 @@
+﻿<Window x:Class="TA_PBO.Bantuan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TA_PBO"
+        mc:Ignorable="d"
+        Title="Bantuan" Height="650" Width="430">
+    <Grid>
+        <Label x:Name="label" Content="Cara menggunakan aplikasi ini" HorizontalAlignment="Left" VerticalAlignment="Top" Width="270" FontWeight="Bold" FontSize="18" Margin="57,10,0,0"/>
+        <Label x:Name="label1" Content="1. Klik salah satu kotak unsur untuk &#xA;memunculkan keterangannya.&#xA;2. Ada tombol untuk memunculkan menu di&#xA;tengah kiri, di sebelah kotak Rb, klik untuk&#xA;memunculkan menu.&#xA;3. Karena sudah membuka window bantuan ini,&#xA;pasti tips kedua sudah tidak diperlukan&#xA;4. Di window keterangan unsur, bisa mencari&#xA;unsur dengan namanya, caranya adalah dengan&#xA;mengetikkan nama unsur yang ingin dicari&#xA;di text box nama unsur, lalu tekan tombol &quot;cari&quot;&#xA;5. Semoga berkah.&#xA;6. Bismillah dapet A :)&#xA;&#xA;API : https://github.com/&#xD;&#xA;neelpatel05/periodic-table-api-go&#xD;&#xA;&#xD;&#xA;Gambar tabel periodik :&#xD;&#xA;https://www.google.com/url?sa=i&amp;source&#xD;&#xA;=images&amp;cd=&amp;ved=2ahUKEwj454386J3iAhV&#xD;&#xA;a63MBHZuZBawQjRx6BAgBEAU&amp;url=&#xD;&#xA;https%3A%2F%2Fwww.relypsa.com%2F&#xD;&#xA;what-we-do%2Four-perspective&#xD;&#xA;%2Fgiving-life-the-periodic-table%2F&amp;psig=AOvVaw070b&#xD;&#xA;-pLNOidv8l0qPXvJb3&amp;ust=1558019466948894" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="402" FontSize="16" Height="543"/>
+    </Grid>
+</Window>

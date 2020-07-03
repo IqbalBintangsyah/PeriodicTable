@@ -1,0 +1,22 @@
+﻿<Window x:Class="TA_PBO.Riwayat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TA_PBO"
+        mc:Ignorable="d"
+        Title="Riwayat" Height="450" Width="400" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:RiwayatDataSet x:Key="riwayatDataSet"/>
+        <CollectionViewSource x:Key="riwayatViewSource" Source="{Binding Riwayat, Source={StaticResource riwayatDataSet}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource riwayatViewSource}">
+        <Label Content="Melihat Masa Lalu" HorizontalAlignment="Left" Height="49" Margin="110,10,0,0" VerticalAlignment="Top" Width="170" FontSize="20"/>
+        <DataGrid x:Name="riwayatDataGrid" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Margin="38,96,41.6,88" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="tanggalColumn" Binding="{Binding Tanggal}" Header="Tanggal" Width="150"/>
+                <DataGridTextColumn x:Name="unsurColumn" Binding="{Binding Unsur}" Header="Unsur" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
